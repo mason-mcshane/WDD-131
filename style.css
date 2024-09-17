@@ -1,0 +1,17 @@
+body {
+    font-size: 20px;
+    margin: 0;
+}
+
+main{
+    background-color:blue;
+    height: 100vh;
+}
+
+.green {
+    color:green;
+}
+
+footer p {
+    font-size: .8em;
+}
