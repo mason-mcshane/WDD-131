@@ -13,36 +13,37 @@ body {
     height: 600px;
     background: white;
     border-radius: 8px;
-    border-style: solid;
+    border-style: groove;
     
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     text-transform: uppercase;
-    border-top: solid;
-    border-style: solid;
+    border-top: groove;
+    border-style: groove;
     border-bottom: #333;
 }
 
 .title {
     color: #006EB6;
     font-size: 16px;
+    padding: auto;
 }
 
 .main-p {
     padding-left: 20px;
-    border-style: solid;
+    border-style: groove;
     border-top: #333;
     border-bottom: #333;
 }
 
 .curve {
     padding-left: 20px;
-    border-style: solid;
+    border-style: groove;
     border-top: #333;
     border-bottom: #333;   
 }
@@ -53,8 +54,7 @@ header {
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: 55px;
-    border-style: solid;
+    border-style: groove;
     border-top: #333;
     border-bottom: #333;
 }
@@ -65,8 +65,7 @@ header {
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: 55px;
-    border-style: solid;
+    border-style: groove;
     border-top: #333;
     border-bottom: #333;
 }
@@ -77,8 +76,7 @@ header {
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: 55px;
-    border-style: solid;
+    border-style: groove;
     border-top: #333;
     border-bottom: #333;
 }
@@ -89,16 +87,14 @@ header {
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: 55px;
-    border-style: solid;
+    border-style: groove;
     border-top: #333;
     border-bottom: #333;
 }
 
 footer {
     text-align: center;
-    margin-top: 30px;
-    border-style: solid;
+    border-style: groove;
     border-top: #333;
 }
 
