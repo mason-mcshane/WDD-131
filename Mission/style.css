@@ -35,6 +35,8 @@ header {
 }
 
 .main-p {
+    margin-top: 0.01px;
+    margin-bottom: 0.01px;
     padding-left: 20px;
     border-style: groove;
     border-top: #333;
@@ -42,6 +44,8 @@ header {
 }
 
 .curve {
+    margin-top: 0.01px;
+    margin-bottom: 0.01px;
     padding-left: 20px;
     border-style: groove;
     border-top: #333;
