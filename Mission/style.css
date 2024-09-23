@@ -12,13 +12,14 @@ body {
     --accent-color: #006EB6;
   }
   
-  .dark {
+.dark {
     --bg-color: #121212;
     --text-color: #eee;
     --accent-color: #006EB6;
   }
   
-  body.dark {
+body.dark {
+    --base-color: #121212;
     --bg-color: #121212;
     --text-color: #eee;
     --accent-color: #006EB6;
@@ -29,7 +30,7 @@ body {
     margin: 20px auto;
     padding: 100px;
     height: 600px;
-    background: white;
+    background-color: var(--bg-color);
     
 }
 
