@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+:root {
+    --Gold-color: #EFC69B;
+    --Red-color: #AF1B3F;
+    --White-color: #f3eef2;
+    --text-dark: #333;
+    --text-light: #ffffff;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Mooli", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--text-dark);
+    color: var(--White-color);
+}
+
+h1 {
+    color: var(--Red-color);
+    text-align: center;
+    padding-left: 1%;
+}
+
+h2 {
+    color: var(--Red-color);
+    text-align: center;
+}
+
+p {
+    margin: 6px 0;
+    /* tighten paragraph texts together */
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    padding: 0 15%;
+    border: 2px solid var(--Red-color);
+    border-left: none;
+    border-right: none;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--skip-bg-color);
+    color: var(--skip-text-color);
+    padding: 10px;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
+.book-parent {
+    display: flex;
+    margin: 30px 0 60px;
+}
+
+.info-div, .filter-div {
+    padding: 20px;
+}
+
+.info-div {
+    width: 20%;
+    border-right: 2px solid var(--Red-color);
+    text-align: right;
+}
+
+.filter-div {
+    width: 20%;
+    border-left: 2px solid var(--Red-color);
+    border-right: 2px solid var(--Red-color);
+    border-bottom: 2px solid var(--Red-color);
+    border-top: 2px solid var(--Red-color);
+}
+
+.book-div {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-div img {
+    align-self: center;
+    margin: 6px;
+}
