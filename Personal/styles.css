@@ -1,0 +1,188 @@
+/* CSS Variables (Root) */
+:root {
+    --primary-color: #61faad;
+    --secondary-color: #b68db9;
+    --accent1-color: #cbddca;
+    --accent2-color: #dd83c2;
+    --text-color: #000000;
+    --heading-font: "Rethink Sans", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+    --footer-font: "Rethink Sans", sans-serif;
+}
+
+/* Global Styles */
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+    background-color: var(--accent1-color);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Container */
+.container {
+    width: 70%; /* 15% margin on each side */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height layout */
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and heading */
+    align-items: center; /* Align items vertically */
+    padding: 20px 20px; /* Decreased vertical padding */
+    background-color: var(--primary-color); /* Optional: Background for contrast */
+}
+
+header img {
+    width: 200px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Align to the left */
+    margin-right: 0; /* Align to the right */
+    display: block; /* Ensures proper alignment */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Slightly decrease font size */
+    color: var(--text-color); /* Use your defined text color */
+    margin: 0; /* Remove default margin */
+    font-family: var(--heading-font); /* Ensure consistent font */
+}
+
+
+
+/* Main Section */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-template-rows: 1fr 1fr;  /* Two rows */
+    gap: 20px;
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+}
+
+/* Paragraphs */
+main p {
+    font-size: 18.5px; /* Larger text */
+    line-height: 1.8; /* More line spacing */
+    margin: 0;
+}
+
+.top-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.top-right {
+    width: 100%; 
+    max-height: 400px;
+    object-fit: cover;
+
+    /* Custom Border */
+    border: 5px solid var(--secondary-color); /* Solid border with custom color */
+    border-radius: 15px; /* Rounded corners */
+
+    /* Optional: Box Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+
+    /* Optional: Padding inside the border */
+    padding: 5px; 
+
+    /* Optional: Animation for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-right:hover {
+    /* Slight zoom effect on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.bottom-left {
+    width: 100%; 
+    max-height: 400px;
+    object-fit: cover;
+
+    /* Custom Border */
+    border: 5px solid var(--secondary-color); /* Same solid border color as the top-right image */
+    border-radius: 15px; /* Rounded corners to match the top-right image */
+
+    /* Box Shadow for Depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+    /* Padding inside the border */
+    padding: 5px;
+    box-sizing: border-box; /* Ensure padding fits within the image box */
+
+    /* Hover Effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bottom-left:hover {
+    transform: scale(1.05); /* Zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+}
+
+
+.bottom-right {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Images */
+main img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--accent2-color);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Space out info and links */
+    align-items: center; /* Vertically center content */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    font-family: var(--footer-font);
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-links a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: var(--accent2-color); /* Highlight link on hover */
+}
+
+footer p {
+    margin: 5px 0; /* Add space between lines */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column; /* Stack items on small screens */
+        text-align: center;
+    }
+
+    .footer-links a {
+        display: block; /* Stack links vertically */
+        margin: 5px 0;
+    }
+}

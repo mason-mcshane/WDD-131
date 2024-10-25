@@ -5,10 +5,12 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #ffffff;
-  --secondary-color: #ffcc99;
-  --accent1-color: #233a43;
-  --accent2-color: #68c3d4;
+  --primary-color: #61faad;
+  --secondary-color: #b68db9;
+  --accent1-color: #d7edbf;
+  --accent2-color: #e33b57;
+  --text-color: #000000;
+  /* I don't like the font colors being anything but black so I intend to make that the consistent choice */
 
   /* change the values below to your chosen font */
   --heading-font: "Afacad Flux";
