@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This is a website that holds pictures with dynamic design">
+    <meta name="author" content="Kepler Ridge">
     <link rel="stylesheet" href="coolpics.css">
     <script src="coolpics.js" defer></script>
-    <header>
-        <h1>Cool Pics 📷</h1>
-        <nav>
-        <a>Home</a>
-        <a>People</a>
-        <a>Places</a>
-        <a>About</a>
-        <a>Contact</a>
-    </nav>
-    </header>
+    <title>Cool Pics</title>
 </head>
 <body>
-    <h2 class="sub-header">Current Work</h2>
+    <div id="div-viewer" class="hide">
+        <button class="close-viewer" id="viewer-exit">X</button>
+        <img src="./norris-full.jpeg" alt="alt description" id="big-img">
+    </div>
+    <header>
+        <h1>Cool Pics 📷</h1>
+        <button class="nav-button" id="button">Menu</button>
+        <nav class="hide" id="nav">
+            <a>Home</a>
+            <a>People</a>
+            <a>Places</a>
+            <a>About</a>
+            <a>Contact</a>
+        </nav>
+    </header>
     <main>
-        <p class="gallery"></p>
-        <figure class="Image1">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure class="Image2">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure class="Image3">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure class="Image4">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure class="Image5">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure class="Image6">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure class="Image7">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure class="Image8">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure class="Image9">
-            <img src="norris-sm.jpeg" alt="picture">
-        </figure>
+        <h2>Current Work</h2>
+        <section class="gallery">
+            <figure class="close-picture">  
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+            <figure class="close-picture">  
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+            <figure class="close-picture">  
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+            <figure class="close-picture">  
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+            <figure class="close-picture">  
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+            <figure class="close-picture">  
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+            <figure class="close-picture">  
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+            <figure class="close-picture"> 
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+            <figure class="close-picture">  
+                <img src="norris-sm.jpeg" alt="picture">
+            </figure>
+        </section>
     </main>
+    <footer>
+        ©2024 Not a real site 😀
+    </footer>
 </body>
-<footer>
-    ©2024 Not a real site 😀.
-</footer>
 </html>
