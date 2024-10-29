@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interior Furniture</title>
+    <title>Architectural Details</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <h1>Interior Furniture</h1>
-</header>
-<body>
-    
+<body class="child2-page">
+    <div class="container">
+        <header>
+            <h1>Architectural Details</h1>
+            <img src="Images/Logo.png" alt="Logo"> 
+        </header>
+        <main>
+            <div class="top-left">
+                <p id="windowDescription">Click the "Random Window" button to see a window and its description.</p>
+                <div class="random-button-wrapper">
+                    <button id="randomWindowButton">Random Window</button>
+                </div>
+            </div>
+            <img id="windowImage" src="Images/window_1.jpg" alt="Window Image" class="top-right">
+            <img id="doorImage" src="Images/door_1.jpg" alt="Door Image" class="bottom-left">
+            <div class="bottom-right">
+                <p id="doorDescription">Click the "Random Door" button to see a door and its description.</p>
+                <div class="random-button-wrapper">
+                    <button id="randomDoorButton">Random Door</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <p>Mason McShane</p>
+            <a href="index.html">Home</a>
+            <a href="child1.html">Architectural Details</a>
+            <a href="child2.html">Interior Furniture</a>
+        </footer>
+    </div>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

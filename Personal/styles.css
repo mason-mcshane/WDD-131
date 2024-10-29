@@ -57,8 +57,6 @@ header h1 {
     font-family: var(--heading-font); /* Ensure consistent font */
 }
 
-
-
 /* Main Section */
 main {
     display: grid;
@@ -85,23 +83,14 @@ main p {
     width: 100%; 
     max-height: 400px;
     object-fit: cover;
-
-    /* Custom Border */
     border: 5px solid var(--secondary-color); /* Solid border with custom color */
     border-radius: 15px; /* Rounded corners */
-
-    /* Optional: Box Shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-
-    /* Optional: Padding inside the border */
     padding: 5px; 
-
-    /* Optional: Animation for hover effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .top-right:hover {
-    /* Slight zoom effect on hover */
     transform: scale(1.05); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
@@ -110,19 +99,11 @@ main p {
     width: 100%; 
     max-height: 400px;
     object-fit: cover;
-
-    /* Custom Border */
     border: 5px solid var(--secondary-color); /* Same solid border color as the top-right image */
     border-radius: 15px; /* Rounded corners to match the top-right image */
-
-    /* Box Shadow for Depth */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-
-    /* Padding inside the border */
     padding: 5px;
     box-sizing: border-box; /* Ensure padding fits within the image box */
-
-    /* Hover Effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -130,7 +111,6 @@ main p {
     transform: scale(1.05); /* Zoom on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow */
 }
-
 
 .bottom-right {
     grid-column: 2 / 3;
@@ -142,6 +122,157 @@ main img {
     width: 100%; /* Make images responsive */
     height: auto;
     object-fit: cover;
+}
+
+/* Apply to child pages only */
+body.child1 {
+    background-color: var(--accent1-color); /* Slightly different background */
+}
+
+.child1 main h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    margin-top: 0;
+}
+
+/* Top-left section: Uses flex to stack description and button */
+.child2-page .top-left {
+    display: flex;
+    flex-direction: column; /* Stack the text and button */
+    height: 100%; /* Full height of top-left grid cell */
+    justify-content: space-between; /* Space out text and button */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Wrapper for the button to align it properly */
+.random-button-wrapper {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center;
+    height: 50%; /* Bottom half of top-left section */
+    width: 100%; /* Ensure it spans the entire width */
+}
+
+/* Full-width button with increased size and padding */
+#randomWindowButton {
+    width: 100%; /* Full width of the container */
+    padding: 15px; /* Add padding for better height */
+    font-size: 1.2rem; /* Increase font size */
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 300px; /* Optional: Limit max width if needed */
+}
+
+/* Hover effect for better interactivity */
+#randomWindowButton:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Bottom-left: Door image layout */
+.child2-page .bottom-left {
+    width: 100%; /* Full width */
+    max-height: 400px;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Bottom-right: Door description and button layout */
+.child2-page .bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Door description */
+.child2-page .bottom-right p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    flex: 1; /* Takes up the top half */
+}
+
+/* Door button wrapper */
+.child2-page .bottom-right .random-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Bottom half */
+    width: 100%;
+}
+
+/* Door button */
+#randomDoorButton {
+    width: 100%; /* Full width */
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 300px;
+}
+
+#randomDoorButton:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Button Styles */
+.random-button-wrapper {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center;
+    height: 50%; /* Bottom half of section */
+    width: 100%; /* Ensure it spans the entire width */
+}
+
+/* Button styles for Couch and Table buttons */
+#randomCouchButton,
+#randomTableButton {
+    width: 100%; /* Full width of the container */
+    padding: 15px; /* Add padding for better height */
+    font-size: 1.2rem; /* Increase font size */
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 300px; /* Optional: Limit max width if needed */
+}
+
+/* Hover effect */
+#randomCouchButton:hover,
+#randomTableButton:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Couch and Table Sections */
+.couch-section, .table-section {
+    display: flex; 
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space out children */
+    height: 100%; /* Ensure it takes the full height of its parent */
+    padding: 20px; /* Add padding around the section */
+    box-sizing: border-box; /* Ensure padding is included in the total height */
+}
+
+/* Ensure the button wrapper takes space at the bottom */
+.couch-section .random-button-wrapper,
+.table-section .random-button-wrapper {
+    margin-top: auto; /* Push this wrapper to the bottom */
+    flex-shrink: 0; /* Prevent the wrapper from shrinking */
 }
 
 /* Footer Styles */
@@ -186,3 +317,4 @@ footer p {
         margin: 5px 0;
     }
 }
+

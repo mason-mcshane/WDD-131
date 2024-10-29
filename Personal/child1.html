@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architectural Detials</title>
+    <title>Interior Furniture</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <h1>Architectural Detials</h1>
-</header>
-<body>
-    
+<body class="child1-page">
+    <div class="container">
+        <header>
+            <h1>Interior Furniture</h1>
+            <img src="Images/Logo.png" alt="Logo">
+        </header>
+
+        <main>
+            <!-- Top-left: Couch text and button -->
+            <div class="top-left">
+                <p id="couchDescription">
+                    Click the "Random Couch" button to see a couch and its description.
+                </p>
+                <div class="random-button-wrapper">
+                    <button id="randomCouchButton">Random Couch</button>
+                </div>
+            </div>
+
+            <!-- Top-right: Couch image -->
+            <img id="couchImage" src="Images/couch_1.jpg" alt="Couch Image" class="top-right">
+
+            <!-- Bottom-left: Table image -->
+            <img id="tableImage" src="Images/table_1.jpg" alt="Table Image" class="bottom-left">
+
+            <!-- Bottom-right: Table description and button -->
+            <div class="bottom-right">
+                <p id="tableDescription">
+                    Click the "Random Table" button to see a table and its description.
+                </p>
+                <div class="random-button-wrapper">
+                    <button id="randomTableButton">Random Table</button>
+                </div>
+            </div> 
+        </main>
+
+        <footer>
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <p>Mason McShane</p>
+            <a href="index.html">Home</a>
+            <a href="child1.html">Interior Furniture</a>
+            <a href="child2.html">Architectural Details</a>
+        </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
+

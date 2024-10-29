@@ -14,7 +14,6 @@ function showMenu() {
 const closeButton = document.getElementById('viewer-exit');
 const modal = document.getElementById('div-viewer');
 const modalImg = document.getElementById('big-img');
-
 closeButton.addEventListener('click', closeModal);
 
 function closeModal() {
@@ -22,7 +21,6 @@ function closeModal() {
 }
 
 document.addEventListener('DOMContentLoaded', handleImages);
-
 const figures = document.querySelectorAll('.close-picture img');
 
 function handleImages() {
