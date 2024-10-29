@@ -136,7 +136,7 @@ body.child1 {
 }
 
 /* Top-left section: Uses flex to stack description and button */
-.child2-page .top-left {
+ .top-left {
     display: flex;
     flex-direction: column; /* Stack the text and button */
     height: 100%; /* Full height of top-left grid cell */
@@ -245,7 +245,6 @@ body.child1 {
     font-size: 1.2rem; /* Increase font size */
     background-color: var(--primary-color);
     color: var(--text-color);
-    border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
